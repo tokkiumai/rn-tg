@@ -19,6 +19,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 ios/.xcode.env.local
+ios/rntg.xcworkspace/xcshareddata
 
 # Android/IntelliJ
 .idea
