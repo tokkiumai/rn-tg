@@ -8,9 +8,11 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "yarn pods && yarn ios:permissions"
   },
   "dependencies": {
+    "@shopify/react-native-skia": "^0.1.176",
     "react": "18.2.0",
     "react-native": "0.71.3"
   },
