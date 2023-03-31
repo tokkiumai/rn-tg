@@ -80,7 +80,7 @@ function Project({ font, smallFont, project }: Props) {
       pointer: pointer.current * pd,
       origin: origin.current * pd,
       resolution: [outer.width * pd, outer.height * pd],
-      countainer: [
+      container: [
         inner.rect.x,
         inner.rect.y,
         inner.rect.x + inner.rect.width,
