@@ -3,7 +3,7 @@ import { MEDIUM_HEADER_HEIGHT, SMALL_HEADER_HEIGHT } from './01constants'
 import React from 'react'
 import { Dimensions, View } from 'react-native'
 import Animated from 'react-native-reanimated'
-import { Header } from './01components'
+import { Header, Label } from './01components'
 
 let { Value, Extrapolate, interpolateNode, add, multiply } = Animated
 interface Props {
@@ -73,11 +73,19 @@ function Headers(props: Props) {
         width: sections.length * dWidth,
         backgroundColor,
       }}>
-      {sections.map((section, key) => {
-        let style = getStyle(headerHeight, key)
+      {sections.map((section, index) => {
+        let style = getStyle(headerHeight, index)
         return (
-          <Animated.View key={key} style={style}>
-            <Header index={key} section={section} />
+          <Animated.View key={index} style={style}>
+            <Header index={index} section={section} />
+          </Animated.View>
+        )
+      })}
+      {sections.map((section, index) => {
+        let style = getStyle(headerHeight, index)
+        return (
+          <Animated.View key={index} style={style}>
+            <Label index={index} section={section} x={x} y={y} />
           </Animated.View>
         )
       })}
