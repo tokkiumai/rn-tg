@@ -2,7 +2,7 @@ import React from 'react'
 import { useColorScheme, View } from 'react-native'
 
 import { Colors } from 'react-native/Libraries/NewAppScreen'
-import Riveo from './src/projects/riveo/Riveo'
+import Circle from 'projects/2204/001/001components'
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark'
@@ -14,7 +14,7 @@ function App(): JSX.Element {
 
   return (
     <View style={backgroundStyle}>
-      <Riveo />
+      <Circle />
     </View>
   )
 }
