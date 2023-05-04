@@ -49,7 +49,6 @@ function Circle({ color, scale = 1 }: Props) {
 }
 
 let colors = ['#ffea5e', '#fff4a3', '#ffacd6']
-
 function App() {
   return (
     <View style={styles.app}>
