@@ -21,6 +21,7 @@
     "react-native-gifted-charts": "^1.2.42",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-reanimated": "^3.0.2",
+    "react-native-responsive-linechart": "^5.7.1",
     "react-native-svg": "^13.9.0",
     "react-native-svg-charts": "^5.4.0"
   },
