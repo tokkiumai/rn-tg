@@ -12,7 +12,7 @@ function App(): JSX.Element {
     justifyContent: 'center',
   }
 
-  return <View style={backgroundStyle}></View>
+  return <View></View>
 }
 
 export default App
